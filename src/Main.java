@@ -1,16 +1,10 @@
-public class Main{
-    public static void main(String args){
-        Car c = new Car("Lamborghini","Blue",40,4,6);
-        System.out.println("车轮的个数是：" + c.getWheels());
-        c.start();
-        c.accelerate(60);
-        c.brake();
-
-        Truck t = new Truck("Faw-volkswagen","Black",50,4,1,5000);
-        System.out.println("车轮的个数是：" + t.getWheels());
-        t.start();
-        t.accelerate(30);
-        t.brake();
-
+public class Main {
+    public static void main(String[] args) {
+        Calculator myCalculator = new Calculator();
+        System.out.println("Addition: " + myCalculator.add(3.0, 2.0));
+        System.out.println("Subtraction: " + myCalculator.subtract(5.0, 3.0));
+        System.out.println("Multiplication: " + myCalculator.multiply(2.0, 5.0));
+        System.out.println("Division: " + myCalculator.divide(10.0, 2.0));
+        System.out.println(myCalculator.addB("13829579081298345918257", "438823897418920918472193"));
     }
 }
